@@ -1,0 +1,779 @@
+/*
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add box-sizing for consistent layout */
+}
+
+button:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+body {
+    background-color: #F5FBFF;
+}
+
+.header {
+    background-image: url("../Assets/Hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    max-height: 698px; /* Consider adjusting this for smaller screens */
+    width: 100%;
+}
+
+
+/* Navbar Section */
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Use space-between for flexible spacing */
+    max-width: 1140px;
+    width: 90%; /* Use percentage for flexibility */
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* nav h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: #4E47FF;
+    letter-spacing: -0.1em;
+} */
+
+.site-logo {
+    height: 40px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures proper display */
+    border-radius: 10px;
+}
+
+.btn-1 {
+    width: 90px;
+    height: 40px;
+    background-color: #4E47FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    
+}
+
+nav ul li {
+    list-style: none;
+    /* margin-right: 38px; Removed as space-between handles spacing */
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Banner Section */
+.banner {
+    max-height: 698px; /* Consider adjusting this for smaller screens */
+    width: 100%;
+    text-align: center;
+    padding-bottom: 152px; /* Adjust padding for smaller screens if needed */
+    color: white; /* Added for text visibility on dark background */
+}
+
+.banner h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 65px;
+    color: black;
+    font-weight: bold;
+    line-height: 1.2; /* Adjust line height for better readability */
+    padding: 0 15px; /* Add horizontal padding to prevent overflow */
+}
+
+.btn-2 {
+    margin-top: 37px;
+    width: 174px;
+    height: 48px;
+    background-color: #4E47FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/* main style */
+
+/* Action section */
+.action-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items */
+    max-width: 1140px;
+    margin: 116px auto; /* Center the section */
+    padding: 0 20px; /* Add horizontal padding */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 30px; /* Add a gap between items */
+}
+
+.action-left-side {
+    padding: 0; /* Remove fixed padding */
+    flex: 1; /* Allow it to grow */
+    min-width: 300px; /* Ensure a minimum width before wrapping */
+    text-align: left; /* Default text alignment */
+}
+
+.img1 {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 403px; /* Keep original max-width */
+    border-radius: 48px;
+    display: block; /* Remove extra space below inline images */
+    margin: 0; /* Remove default margin */
+}
+
+.title {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    padding-bottom: 23px;
+}
+
+.subtitle {
+    font-size: 24px;
+    opacity: 0.7; /* Use opacity instead of fixed percentage for better control */
+    line-height: 1.5; /* Improve readability */
+    display: block; /* Ensure it takes its own line */
+    margin-bottom: 23px; /* Added margin for spacing */
+}
+
+.btn-3 {
+    font-size: large;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #4E47FF;
+    width: 229px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 28px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Productive Users Section */
+.productive-section {
+    background-color: rgba(78, 71, 250, 0.1); /* Use rgba for consistent opacity */
+    max-width: 1140px;
+    /* max-height: 306px; Removed fixed height */
+    margin: 116px auto 0 auto; /* Center the section */
+    padding: 80px 50px 40px 50px; /* Adjust padding for flexibility */
+    border-radius: 24px;
+}
+
+.productive-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #252432;
+    text-align: center;
+    margin-bottom: 40px; /* Adjust margin */
+    padding: 0 15px; /* Add horizontal padding */
+}
+
+.all-data {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 30px; /* Add a gap between data items */
+    margin-top: 30px; /* Adjust margin */
+}
+
+.data-3 {
+    text-align: center;
+    flex: 1; /* Allow items to grow */
+    min-width: 150px; /* Ensure minimum width */
+}
+
+.data {
+    font-family: "Open Sans", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #4E47FF;
+}
+
+.data-subtitle {
+    font-size: 20px;
+    opacity: 0.5; /* Consistent opacity */
+}
+
+
+/* test-section */
+.test-section {
+    text-align: center;
+    max-width: 1140px;
+    /* max-height: 342px; Removed fixed height */
+    margin: 80px auto 0 auto; /* Center the section */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.test-section h2 {
+    font-size: 42px;
+    color: #1a1a1a;
+    margin-bottom: 50px;
+    font-family: "Raleway", sans-serif;
+}
+
+.cards {
+    max-width: 1140px;
+    /* max-height: 243px; Removed fixed height */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards horizontally */
+    align-items: flex-start; /* Align cards to the start vertically */
+    gap: 20px;
+    padding-bottom: 40px; /* Add padding below cards */
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 288px;
+    width: 100%; /* Allow cards to take full width if needed */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly lighter shadow */
+    flex-basis: calc(33.333% - 20px); /* Adjust basis for 3 columns with gap */
+    min-width: 280px; /* Ensure minimum width to prevent squishing */
+}
+
+.stars img {
+    width: 18px; /* Adjust star icon size */
+    height: 18px;
+    margin-right: 2px; /* Space between stars */
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1E1E1E;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+    line-height: 1.5; /* Improve readability */
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure image covers the area */
+}
+
+.reviewer .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #757575;
+}
+
+.reviewer .date {
+    font-size: 12px;
+    color: #B3B3B3;
+}
+
+
+/* Extra section */
+.section-exta {
+    max-width: 1140px;
+    /* max-height: 697px; Removed fixed height */
+    padding: 60px 71px;
+    margin: 100px auto 40px auto; /* Center the section */
+    border-radius: 14px;
+    background-color: white;
+    text-align: center;
+    display: flex; /* Use flexbox for image positioning */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.exta-body {
+    text-align: center;
+    margin-bottom: 30px; /* Space between text and image */
+}
+
+.exta-h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.exta-p {
+    margin-bottom: 10px;
+    opacity: 0.5;
+    font-size: 16px; /* Explicitly set font size */
+    line-height: 1.5;
+}
+
+.exta-button {
+    width: 195px;
+    height: 48px;
+    background-color: #4E47FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.exta-image {
+    border-radius: 48px;
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 840px; /* Keep original max-width */
+    object-fit: cover; /* Ensure image covers the area */
+}
+
+
+/* Let’s Get In Touch Section  */
+.touch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    /* max-height: 632px; Removed fixed height */
+    margin: 10px auto 100px auto; /* Center the section */
+    gap: 100px; /* Keep gap for larger screens */
+    flex-wrap: wrap; /* Allow sections to wrap */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.let-section {
+    flex: 1; /* Allow it to grow */
+    min-width: 300px; /* Ensure minimum width */
+}
+
+.section-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    line-height: 1.1; /* Adjust line height */
+}
+
+.touch-section {
+    flex: 1; /* Allow it to grow */
+    min-width: 300px; /* Ensure minimum width */
+    padding: 71px 0;
+    margin-top: 71px; /* Keep this for spacing */
+}
+
+.touch-section label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Make label a block element */
+    margin-bottom: 8px; /* Space below label */
+}
+
+.form-box {
+    height: 24px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.05); /* Use rgba for transparency */
+    display: block;
+    width: 100%; /* Take full width of parent */
+    border: none;
+    font-size: 16px; /* Increase font size for better readability */
+    padding: 20px 0px 20px 32px;
+    margin-bottom: 24px;
+    outline: none; /* Remove outline on focus */
+}
+
+textarea.form-box {
+    height: 120px; /* Adjust default height for textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.btn-4 {
+    margin-top: 37px;
+    width: 100%; /* Take full width of parent */
+    max-width: 497px; /* Keep original max-width */
+    height: 62px;
+    background-color: #4E47FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.hov:hover {
+    background-color: darkblue;
+}
+
+
+/* footer section */
+.footer-main {
+    max-width: 100%; /* Max width for the footer container */
+    background-color: #ffffff;
+    padding: 60px 20px; /* Add padding for overall section */
+    text-align: center; /* Center content in footer */
+}
+
+.footer-section {
+    max-width: 1140px; /* Max width for content inside footer */
+    margin: 0 auto; /* Center the footer content */
+    padding: 40px 0; /* Adjust padding within the content area */
+}
+
+
+.footer-site-logo {
+    height: 60px; /* Slightly larger height for footer logo */
+    width: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* Center the logo and add bottom margin */
+    border-radius: 10px;
+}
+
+
+
+.footer-sub-title {
+    padding-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #8987A1;
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Allow links to wrap */
+    gap: 20px; /* Add space between links */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #8987A1;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-links a:hover {
+    color: #4E47FF; /* Change color on hover */
+}
+
+.copyright-text {
+    margin-top: 30px; /* Space above the copyright text */
+    font-size: 14px;
+    color: #8987A1;
+    text-align: center; /* Center the text */
+}
+
+/* ------------------------------------------------------------- */
+/* MEDIA QUERIES                            */
+/* ------------------------------------------------------------- */
+
+/* Medium devices (tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    /* Header */
+    .header {
+        max-height: unset; /* Allow header height to adjust */
+        padding-bottom: 50px; /* Adjust banner padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    /* .banner h1 {
+        font-size: 45px; } /* Smaller font for tablets */
+    
+        .site-logo {
+        height: 35px; /* Slightly smaller on tablets */
+    }
+
+    .btn-1, .btn-2 {
+        width: 150px; /* Adjust button width */
+    }
+
+    /* Action Section */
+    .action-section {
+        flex-direction: column; /* Stack action section items */
+        text-align: center;
+        margin: 60px auto;
+        padding: 0 15px;
+        gap: 40px;
+    }
+
+    .action-left-side {
+        text-align: center; /* Center text on tablets */
+        order: 2; /* Change order to put text below image if desired */
+    }
+    .img1 {
+        order: 1; /* Change order to put image above text */
+        margin-bottom: 30px; /* Add spacing below image */
+    }
+    .title {
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .btn-3 {
+        width: 180px; /* Adjust button width */
+    }
+
+    /* Productive Users Section */
+    .productive-section {
+        margin: 60px auto 0 auto;
+        padding: 50px 20px;
+    }
+    .productive-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .all-data {
+        flex-direction: column; /* Stack data items */
+        align-items: center;
+        gap: 20px;
+    }
+    .data {
+        font-size: 60px;
+    }
+    .data-subtitle {
+        font-size: 16px;
+    }
+
+    /* Testimonials Section */
+    .test-section {
+        margin: 60px auto 0 auto;
+        padding: 0 15px;
+    }
+    .test-section h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .cards {
+        gap: 15px;
+    }
+    .card {
+        flex-basis: calc(50% - 15px); /* Two columns on tablets */
+        max-width: 350px; /* Allow wider cards */
+        min-width: unset; /* Remove min-width to allow more flexibility */
+    }
+
+    /* Extra Section */
+    .section-exta {
+        padding: 40px 30px;
+        margin: 80px auto 30px auto;
+    }
+    .exta-h1 {
+        font-size: 32px;
+    }
+    .exta-p {
+        font-size: 14px;
+    }
+    .exta-button {
+        width: 180px;
+    }
+    .exta-image {
+        border-radius: 24px; /* Smaller border-radius */
+    }
+
+    /* Contact Section */
+    .touch {
+        flex-direction: column; /* Stack contact sections */
+        margin: 20px auto 80px auto;
+        padding: 0 15px;
+        gap: 40px;
+    }
+    .let-section {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .section-title {
+        font-size: 50px;
+    }
+    .touch-section {
+        width: 100%; /* Take full width */
+        padding: 0;
+        margin-top: 0;
+    }
+    .btn-4 {
+        max-width: 100%; /* Button takes full width */
+    }
+
+    /* Footer */
+    .footer-main {
+        padding: 40px 15px;
+    }
+    .footer-section {
+        padding: 20px 0;
+    }
+    .footer-logo h1 {
+        font-size: 35px;
+    }
+    .footer-sub-title small {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .footer-links {
+        flex-direction: column; /* Stack footer links */
+        gap: 10px;
+    }
+
+    .copyright-text {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
+
+/* Small devices (phones, 576px and below) */
+@media only screen and (max-width: 576px) {
+    /* Header */
+    nav h1 {
+        font-size: 28px;
+    }
+    .btn-1 {
+        width: 100px;
+        height: 40px;
+        font-size: small;
+    }
+    /* .banner h1 {
+        font-size: 32px; 
+    } */
+
+        .site-logo {
+        height: 30px; /* Even smaller on phones */
+    }
+    .btn-2 {
+        width: 130px;
+        height: 40px;
+        font-size: small;
+    }
+
+    /* Action Section */
+    .action-section {
+        gap: 30px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .btn-3 {
+        width: 100%; /* Full width button */
+        max-width: 200px;
+    }
+
+    /* Productive Users Section */
+    .productive-section {
+        padding: 30px 15px;
+    }
+    .productive-title {
+        font-size: 24px;
+    }
+    .data {
+        font-size: 45px;
+    }
+    .data-subtitle {
+        font-size: 14px;
+    }
+
+    /* Testimonials Section */
+    .test-section h2 {
+        font-size: 28px;
+    }
+    .card {
+        flex-basis: 100%; /* Single column on phones */
+        max-width: 100%;
+    }
+
+    /* Extra Section */
+    .section-exta {
+        padding: 20px 15px;
+    }
+    .exta-h1 {
+        font-size: 26px;
+    }
+    .exta-p {
+        font-size: 12px;
+    }
+    .exta-button {
+        width: 100%;
+        max-width: 150px;
+    }
+    .exta-image {
+        border-radius: 15px;
+    }
+
+    /* Contact Section */
+    .section-title {
+        font-size: 38px;
+    }
+    .touch-section {
+        padding: 0;
+    }
+    .form-box {
+        padding: 15px 0 15px 20px; /* Adjust padding for smaller inputs */
+        font-size: 14px;
+    }
+    textarea.form-box {
+        height: 100px;
+    }
+    .btn-4 {
+        height: 50px;
+        font-size: medium;
+    }
+
+    /* Footer */
+    .footer-main {
+        padding: 30px 10px;
+    }
+    .footer-logo h1 {
+        font-size: 30px;
+    }
+    .footer-sub-title small {
+        font-size: 12px;
+    }
+
+    .copyright-text {
+        margin-top: 15px;
+        font-size: 11px;
+    }
+}
